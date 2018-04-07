@@ -18,6 +18,6 @@
 </head>
 <body>
 <h2>Hello To My World!!!</h2>
-<a href="love.html">爱情</a>
+<a href="login.html">爱情</a>
 </body>
 </html>
