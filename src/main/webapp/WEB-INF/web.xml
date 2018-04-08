@@ -2,8 +2,81 @@
  "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
-<web-app>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
   <display-name>Archetype Created Web Application</display-name>
+  <!-- Spring和mybatis的配置文件 -->
+  <!-- 配置需要装载的Spring配置文件 -->
+  <!-- 多个路径用“，”号隔开 -->
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>
+      classpath:/spring/spring_config.xml,
+      classpath:/spring/spring_mybatis_context.xml
+    </param-value>
+  </context-param>
+  <!-- 编码过滤器 -->
+  <!-- Spring字符编码过滤器配置，处理中文乱码，针对post请求 filtername 自己命名-->
+  <filter>
+    <filter-name>encodingFilter</filter-name>
+    <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+    <async-supported>true</async-supported>
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>UTF-8</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>encodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <!-- Spring监听配置，Web容器启动自动装配ApplicationContext的配置信息 -->
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+  <!-- 防止Spring内存溢出监听器 -->
+  <listener>
+    <listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
+  </listener>
+
+  <!-- ================配置SpringMVC核心调度器================ -->
+  <!-- 不指定具体文件的话，默认为"/WEB-INF/<servlet name>-servlet.xml" -->
+  <!-- load-on-startup代表启动顺序，设置为大于等于0表示容器在应用启动时就加载并初始化这个servlet -->
+  <!-- 推荐拦截/，风格优雅 -->
+  <servlet>
+    <servlet-name>SpringMVC</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <init-param>
+      <!-- ContextconfigLocation配置springmvc加载的配置文件适配器、处理映射器等 -->
+      <param-name>contextConfigLocation</param-name>
+      <param-value>classpath:spring/spring_mvc_config.xml</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+    <async-supported>true</async-supported>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SpringMVC</servlet-name>
+    <!-- 此处可以可以配置成*.do，对应struts的后缀习惯 -->
+    <!-- 1、.action访问以.action结尾的  由DispatcherServlet进行解析
+          2、/,所有访问都由DispatcherServlet进行解析
+     -->
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+
+
+
+  <!-- 设置session过期时间为60分钟 -->
+  <session-config>
+    <session-timeout>60</session-timeout>
+  </session-config>
+
+
+
+
+
 
   <!-- 错误页面的跳转配置 -->
   <error-page>

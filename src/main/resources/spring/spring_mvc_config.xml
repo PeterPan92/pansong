@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:beans="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                    http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+                    http://www.springframework.org/schema/context
+                    http://www.springframework.org/schema/context/spring-context-3.2.xsd
+                    http://www.springframework.org/schema/mvc
+                    http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
+                    ">
+
+    <!--1、Controller配置-->
+    <!-- 自动扫描该包，扫描包下面所有的Controller，可以使用注解来指定访问路径。
+     打开使用注解自动检测功能自动注册Bean，只扫描@Controller-->
+    <!--<context:component-scan base-package="com.inspur.ssm.controller" />-->
+    <!--也可以使用单个的配置方式，需要指定Controller的全限定名。-->
+    <!--<bean name="/queryUser.action" class="com.inspur.ssm.controller.Controller1"/>-->
+    <!-- 也可以启动包扫描功能，以便注册带有@Controller、@Service、@repository、@Component等注解的类成为spring的bean -->
+    <context:component-scan base-package="com.inspur.ssm.controller"></context:component-scan>
+
+
+    <!--2、视图解析器配置-->
+    <!-- 定义跳转的文件的前后缀 ，视图模式配置-->
+    <!-- 视图解析器配置 -->
+    <!-- 对转向页面的路径解析,指定输出视图的前后缀，controller返回的视图直接加上此前后缀 -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <!-- 这里的配置我的理解是自动给后面action的方法return的字符串加上前缀和后缀，变成一个 可用的url地址 -->
+        <!-- 使用前缀和后缀 -->
+        <property name="prefix" value="/jsp/ssm/" />
+        <property name="suffix" value=".jsp" />
+    </bean>
+
+    <!--3、配置注解的处理器和处理处理映射器-->
+    <!-- 启动注解驱动的Spring MVC功能，注册请求url和注解POJO类方法的映射 -->
+    <!--(1)自动注册DefaultAnootationHandlerMapping,AnotationMethodHandlerAdapter-->
+    <!--(2)提供一些列：数据绑定，数字和日期的format @NumberFormat, @DateTimeFormat, xml,json默认读写支持-->
+    <!-- 注解的处理器适配器 -->
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"/>
+    <!-- 注解的处理器映射器 -->
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"/>
+    <!--也可使用简化设置-->
+    <!-- 配置注解的处理器映射器和处理器适配器 -->
+    <!--<mvc:annotation-driven conversion-service="conversionService"></mvc:annotation-driven>-->
+   <!--或者-->
+    <!--<mvc:annotation-driven />-->
+    <!--或者-->
+    <!-- 默认的注解映射的支持 - 增加String类型中文解析 -->
+    <!--<mvc:annotation-driven>-->
+        <!--<mvc:message-converters>-->
+            <!--<bean class="org.springframework.http.converter.StringHttpMessageConverter">-->
+                <!--<constructor-arg value="UTF-8" />-->
+            <!--</bean>-->
+        <!--</mvc:message-converters>-->
+    <!--</mvc:annotation-driven>-->
+
+    <!-- 4、定义全局异常处理器 -->
+    <!-- 只有一个全局异常处理器起作用 -->
+    <!--<bean id="exceptionResolver" class="com.wxisme.ssm.exception.OverallExceptionResolver"></bean>-->
+
+    <!--5、配置文件上传数据解析器，在上传文件时需要配置。-->
+    <!--配置上传文件数据解析器 两种参数设置的方式 -->
+    <!--<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">-->
+        <!--<property name="maxUploadSize">-->
+            <!--<value>9242880</value>-->
+        <!--</property>-->
+        <!--<property name="defaultEncoding" value="utf-8"></property>-->
+        <!--<property name="maxInMemorySize" value="9242880"></property>-->
+    <!--</bean>-->
+
+    <!--6、配置一些自定义的参数类型，以日期类型绑定为例-->
+    <!-- 自定义参数类型绑定 -->
+    <!--<bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">-->
+        <!--<property name="converters">-->
+            <!--<list>-->
+                <!--&lt;!&ndash; 日期类型绑定 &ndash;&gt;-->
+                <!--<bean class="com.wxisme.ssm.controller.converter.DateConverter"/>-->
+            <!--</list>-->
+        <!--</property>-->
+    <!--</bean>-->
+
+    <!--7、配置拦截器，可以直接定义拦截所有请求，也可以自定义拦截路径。-->
+    <!--<mvc:interceptors>-->
+        <!--&lt;!&ndash; 直接定义拦截所有请求 &ndash;&gt;-->
+        <!--<bean class="com.wxisme.ssm.interceptor.IdentityInterceptor"></bean>-->
+        <!--&lt;!&ndash; <mvc:interceptor>-->
+            <!--拦截所有路径的请求   包括子路径-->
+            <!--<mvc:mapping path="/**"/>-->
+            <!--<bean class="com.wxisme.ssm.interceptor.IdentityInterceptor"></bean>-->
+        <!--</mvc:interceptor> &ndash;&gt;-->
+    <!--</mvc:interceptors>-->
+
+
+</beans>
