@@ -20,7 +20,7 @@
     <!--也可以使用单个的配置方式，需要指定Controller的全限定名。-->
     <!--<bean name="/queryUser.action" class="com.inspur.ssm.controller.Controller1"/>-->
     <!-- 也可以启动包扫描功能，以便注册带有@Controller、@Service、@repository、@Component等注解的类成为spring的bean -->
-    <context:component-scan base-package="com.inspur.ssm.controller"></context:component-scan>
+    <context:component-scan base-package="com.peter.bj.controller"></context:component-scan>
 
 
     <!--2、视图解析器配置-->

@@ -45,7 +45,7 @@
         <!-- 当mybatis的xml文件和mapper接口不在相同包下时，需要用mapperLocations属性指定xml文件的路径 -->
         <!-- *是个通配符，代表所有的文件，**代表所有目录下 -->
         <!--默认dao层中的.xml文件不会编译到项目路径下，通过maven指定，将到层的xml文件编译到项目中，或者将.xml文件放到resource目录下，在此指定.xml文件的路径即可（resource路径下的内容默认编译到项目路径下）-->
-        <property name="mapperLocations" value="classpath*:com/inspur/**/dao/*.xml"></property>
+        <property name="mapperLocations" value="classpath*:com/peter/**/dao/*.xml"></property>
 
         <!-- 指定mybatis核心配置文件 -->
         <property name="configLocation" value="classpath:spring/mybatis_config.xml"/>
