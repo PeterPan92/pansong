@@ -45,16 +45,16 @@
         <!-- 当mybatis的xml文件和mapper接口不在相同包下时，需要用mapperLocations属性指定xml文件的路径 -->
         <!-- *是个通配符，代表所有的文件，**代表所有目录下 -->
         <!--默认dao层中的.xml文件不会编译到项目路径下，通过maven指定，将到层的xml文件编译到项目中，或者将.xml文件放到resource目录下，在此指定.xml文件的路径即可（resource路径下的内容默认编译到项目路径下）-->
-        <property name="mapperLocations" value="classpath*:com/peter/**/dao/*.xml"></property>
+        <property name="mapperLocations" value="classpath*:/com/peter/**/dao/*.xml"></property>
 
         <!-- 指定mybatis核心配置文件 -->
-        <property name="configLocation" value="classpath:spring/mybatis_config.xml"/>
+        <property name="configLocation" value="classpath:/spring/mybatis_config.xml"/>
     </bean>
 
     <!-- 3、DAO接口所在包名，Spring会自动查找其下的类 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <!-- basePackage:指定sql映射文件/接口所在的包（自动扫描）-->
-        <property name="basePackage" value="com.inspur.ssm.dao" />
+        <property name="basePackage" value="com.peter.bj.dao" />
         <!-- sqlSessionFactoryBeanName：代表延迟加载-->
         <!-- 这个配置的前提条件是：映射接口类文件(.java)和映射XML文件(.xml)需要放在相同的包下（com.demo.mapper）-->
         <!-- <property name="sqlSessionFactory" ref="sqlSessionFactory"></property> -->

@@ -1,0 +1,325 @@
+@CHARSET "UTF-8";
+
+/*页面整体样式*/
+.body-style{
+    min-width:1300px;
+    background-color: #fcfcfc;
+}
+.margin-size{
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(231, 232, 237, 1);
+    padding-left: 3%;
+    display: table;
+    width: 100%;
+    padding-right: 3%;
+    margin-right: 5%;
+    margin-left: 0;
+    min-height: 800px;
+    min-width: 800px;
+    /* margin-bottom: 115px; */
+}
+/*标题样式*/
+.title-name-div{
+	margin-top: 20px;
+    margin-bottom: 20px;
+}
+.tltle-name-span{
+	height: 50px;
+    line-height: 50px;
+    font-family: '微软雅黑';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+/*在网站中嵌入代码样式*/
+.insert-code-div{
+	background: rgba(248, 248, 248, 1);
+    border: 1px solid rgba(224, 228, 236, 1);
+    height: 40px;
+}
+.insert-code-span{
+    font-family: '微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
+    font-weight: 700;
+    font-style: normal;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 25px;
+}
+.insert-code-content-div{
+	background-color: rgba(248, 248, 248, 1);
+	height: 110px;
+	width: 780px;
+	margin-left:25px;
+	margin-top:10px;
+	font-family: '微软雅黑';
+    font-weight: 400;
+    font-style: normal;
+    padding:10px;
+}
+.insert-code-content-span{
+	line-height: 30px;
+}
+.insert-code-tip-div{
+	font-size: 12px;
+    color: #999999;
+    line-height: 20px;
+    margin-top:10px;
+    margin-bottom:20px;
+    margin-left:25px;
+}
+.insert-code-tip-p{
+	margin-bottom:0px;
+}
+/*选择客服按钮位置*/
+.chat-button-location-div{
+	margin-top: 25px;
+    margin-bottom: 25px;
+    padding-left: 20px;
+}
+.chat-button-location-radio-input{
+	margin-right: 10px;
+}
+input[type=checkbox], input[type=radio]{
+	margin: 0px;
+	margin-right: 10px;
+}
+
+/*自定义聊天窗颜色*/
+.chat-windows-color-div{
+	margin-top: 15px;
+    margin-left: 5px;
+}
+.chat-windows-color-diy-div{
+	margin-top:15px;
+	margin-bottom:25px;
+	margin-left:5px;
+	font-family: '微软雅黑';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #666666;
+}
+input[type="color" i] {
+    -webkit-appearance: square-button;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(195, 122, 211, 1);
+    border-width: 0px;
+    float:right;
+}
+.diy-color-value-span{
+	line-height:30px;
+	height:30px;
+}
+.diy-color-value-div{
+    padding-right: 0px;
+    padding-left: 15px;
+    background-color: rgba(248, 248, 248, 1);
+}
+.diy-color-style{
+	padding-left: 0px;
+    padding-right: 0px;
+}
+.diy-color-choose{
+	padding-left: 0px;
+    padding-right: 0px;
+}
+.diy-color-style-input{
+	height: 30px;
+}
+
+/*自定义聊天窗*/
+.diy-chat-windows-div{
+	margin-top:20px;
+}
+
+.diy-chat-title-div{
+    text-align: right;
+    padding-right: 0px;
+    
+}
+.diy-chat-title-span{
+	line-height:35px;
+    height:35px;
+    font-family: '微软雅黑';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;   
+}
+.diy-chat-windows-welcom-div{
+	margin-top: 30px;
+	margin-bottom: 10px;
+    border-bottom: 1px solid rgba(224, 228, 236, 1);
+}
+.diy-chat-title-input{
+    height:35px;
+    padding-left: 10px;
+    width: 425px;
+}
+.diy-chat-title-indiv{
+}
+.diy-chat-welcome-textarea{
+	padding:10px;
+    resize: none;
+    border-bottom: 0px;
+    display:block;
+    outline: none;
+    width: 425px;
+}
+.diy-chat-welcome-last-text-div{
+	line-height:20px;
+}
+.diy-chat-welcome-last-text{
+	padding:10px;
+    resize: none;
+    padding: 10px;
+    border-top: 0px;
+    background-color: rgba(248, 248, 248, 1);
+    font-size: 13px;
+    color: #999999;
+    outline: none;
+    overflow-y: hidden;
+    width: 425px;
+}
+.save-button{
+	margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*input框中颜色更改*/
+#color-input-red +label{
+	display: block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 2px;
+    left: 15px;
+    background: rgba(240, 84, 77, 1);;
+}
+
+#color-input-red:checked +label::before{
+    display: block;
+    content: "\2714";
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+input[type=checkbox]{
+	visibility: hidden;
+}
+#color-input-orange +label{
+    display: block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 2px;
+    left: 15px;
+    background: rgba(234, 152, 54, 1);
+}
+
+#color-input-orange:checked +label::before{
+    display: block;
+    content: "\2714";
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+
+#color-input-yellow +label{
+    display: block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 2px;
+    left: 15px;
+    background: rgba(230, 192, 58, 1);
+}
+
+#color-input-yellow:checked +label::before{
+    display: block;
+    content: "\2714";
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+
+#color-input-green +label{
+    display: block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 2px;
+    left: 15px;
+    background: rgba(95, 189, 65, 1);
+}
+
+#color-input-green:checked +label::before{
+    display: block;
+    content: "\2714";
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+
+#color-input-blue +label{
+    display: block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 2px;
+    left: 15px;
+    background: rgba(61, 170, 230, 1); 
+}
+
+#color-input-blue:checked +label::before{
+    display: block;
+    content: "\2714";
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+
+#color-input-purple +label{
+    display: block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 2px;
+    left: 15px;
+    background: rgba(195, 122, 211, 1);
+}
+
+#color-input-purple:checked +label::before{
+    display: block;
+    content: "\2714";
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+/*
+#color-input-diy +label{
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    left: 27px;
+    background: rgba(195, 122, 211, 1);
+}
+*/
+
+/*修改提示框中的颜色*/
+input.diy-chat-title-input::-webkit-input-placeholder { /* WebKit browsers */ 
+color: #CCCCCC;; 
+} 
+input.diy-chat-title-input:-ms-input-placeholder{ /* Internet Explorer 10+ */ 
+color: #CCCCCC;; 
+} 

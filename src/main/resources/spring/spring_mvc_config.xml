@@ -30,7 +30,7 @@
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <!-- 这里的配置我的理解是自动给后面action的方法return的字符串加上前缀和后缀，变成一个 可用的url地址 -->
         <!-- 使用前缀和后缀 -->
-        <property name="prefix" value="/jsp/ssm/" />
+        <property name="prefix" value="/jsp/bj/" />
         <property name="suffix" value=".jsp" />
     </bean>
 
@@ -39,14 +39,14 @@
     <!--(1)自动注册DefaultAnootationHandlerMapping,AnotationMethodHandlerAdapter-->
     <!--(2)提供一些列：数据绑定，数字和日期的format @NumberFormat, @DateTimeFormat, xml,json默认读写支持-->
     <!-- 注解的处理器适配器 -->
-    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"/>
+    <!--<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"/>-->
     <!-- 注解的处理器映射器 -->
-    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"/>
+    <!--<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"/>-->
     <!--也可使用简化设置-->
     <!-- 配置注解的处理器映射器和处理器适配器 -->
     <!--<mvc:annotation-driven conversion-service="conversionService"></mvc:annotation-driven>-->
    <!--或者-->
-    <!--<mvc:annotation-driven />-->
+    <mvc:annotation-driven />
     <!--或者-->
     <!-- 默认的注解映射的支持 - 增加String类型中文解析 -->
     <!--<mvc:annotation-driven>-->

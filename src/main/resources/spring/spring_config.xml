@@ -10,7 +10,7 @@
                     http://www.springframework.org/schema/context
                     http://www.springframework.org/schema/context/spring-context-3.2.xsd
                     http://www.springframework.org/schema/mvc
-                    http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
+    http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
 
     <!-- 自动扫描；要注意的就是主容器中不扫描@Controller注解，因为@Controller将会在SpringMVC扫描。-->
     <context:component-scan base-package="com.peter.bj" >
@@ -19,4 +19,7 @@
 
     <!-- 引入Mybatis配置 -->
     <!--<import resource="/WEB-INF/spring/spring_mybatis_context.xml"/>-->
+
+     <!-- 解决静态资源访问 -->
+    <mvc:default-servlet-handler />
 </beans>

@@ -18,6 +18,7 @@
 </head>
 <body>
 <h2>Hello To My World!!!</h2>
-<a href="login.html">爱情</a>
+<a href="<%=request.getContextPath()%>/jsp/bj/login.jsp">登陆</a>
+<a href="<%=request.getContextPath()%>/jsp/bj/switchInWebsite.jsp">网站接入</a>
 </body>
 </html>

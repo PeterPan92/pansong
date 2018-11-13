@@ -87,4 +87,10 @@
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
 
+  <servlet-mapping>
+    <servlet-name>default</servlet-name>
+    <url-pattern>*.js</url-pattern>
+  </servlet-mapping>
+
+
 </web-app>

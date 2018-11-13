@@ -755,7 +755,7 @@ window.Modernizr = (function( window, document, undefined ) {
         return ownerDocument;
       }        var html5 = {
 
-            'elements': options.elements || 'abbr article aside audio bdi canvas data datalist details figcaption figure footer header hgroup mark meter nav output progress section summary time video',
+            'elements': options.elements || 'abbr article aside audio bdi canvas dao datalist details figcaption figure footer header hgroup mark meter nav output progress section summary time video',
 
             'shivCSS': (options.shivCSS !== false),
 

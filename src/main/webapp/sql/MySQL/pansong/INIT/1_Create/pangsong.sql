@@ -8,7 +8,8 @@ CREATE TABLE `pan_song_login`(
   `user_name` VARCHAR(32) NOT NULL COMMENT '用户名',
   `password` VARCHAR(32) NOT NULL COMMENT '密码',
   `status` VARCHAR(6) COMMENT '用户是否开通登陆权限',
-  `created_time` datetime COMMENT '应用创建时间',
+  `roles`  VARCHAR(5) COMMENT '用户角色 user admin',
+  `create_time` datetime COMMENT '应用创建时间',
   `update_time` datetime COMMENT '应用更新时间',
   PRIMARY KEY (`login_id`) COMMENT ' 主键login_id'
 )ENGINE=InnoDb DEFAULT CHARSET=utf8   COMMENT='登陆'

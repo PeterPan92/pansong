@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <%@ page language="java" contentType="text/html; charset=UTF-8" isErrorPage="true"%>
-<%@ taglib uri="/tags/loushang-web" prefix="l"%>
 <% response.setStatus(HttpServletResponse.SC_OK); %>
 <html lang="zh-CN">
   <head>
