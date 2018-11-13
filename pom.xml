@@ -25,7 +25,7 @@
     <javaee-api.version>8.0</javaee-api.version>
     <jackson.version>2.7.5</jackson.version>
       <!--json版本信息-->
-      <json-lib.version>2.1</json-lib.version>
+      <json-lib.version>2.4</json-lib.version>
       <ezmorph.version>1.0.3</ezmorph.version>
 
       <!--http版本信息-->
