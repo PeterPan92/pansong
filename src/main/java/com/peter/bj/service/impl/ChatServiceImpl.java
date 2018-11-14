@@ -55,6 +55,7 @@ public class ChatServiceImpl implements IChatService{
         paramJson.put("userInfo",userJson);
 
         //查询图灵结果
+
         JSONObject tuLingReturnJson = HttpRequestUtils.httpPost(url,paramJson);
 
         //对图灵结果进行处理

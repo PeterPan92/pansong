@@ -28,12 +28,12 @@ import java.util.*;
  *
  */
 public class HttpRequestUtils {
-    
+
     private static Logger logger = LoggerFactory.getLogger(HttpRequestUtils.class); // 日志记录
 
     /**
      * httpPost
-     * 
+     *
      * @param url [路径]
      * @param jsonParam [参数]
      * @return
@@ -44,7 +44,7 @@ public class HttpRequestUtils {
 
     /**
      * post请求
-     * 
+     *
      * @param url [url地址]
      * @param jsonParam [参数]
      * @param noNeedResponse [不需要返回结果]
@@ -64,7 +64,7 @@ public class HttpRequestUtils {
             }
             HttpResponse result = httpClient.execute(method);
 //            url = URLDecoder.decode(url, "UTF-8");
-            // 请求发送成功，并得到响应 
+            // 请求发送成功，并得到响应
             if (result.getStatusLine().getStatusCode() == 200) {
                 String str = "";
                 try {
@@ -88,7 +88,7 @@ public class HttpRequestUtils {
 
     /**
      * 发送get请求
-     * 
+     *
      * @param url [路径]
      * @return
      */
@@ -116,10 +116,10 @@ public class HttpRequestUtils {
         }
         return jsonResult;
     }
-    
+
     /**
      * 发送get请求
-     * 
+     *
      * @param url [路径]
      * @return
      */
@@ -144,10 +144,10 @@ public class HttpRequestUtils {
         }
         return strResult;
     }
-    
+
     /**
      * post请求
-     * 
+     *
      * @param url [url地址]
      * @param jsonParam [参数]
      * @return
@@ -166,7 +166,7 @@ public class HttpRequestUtils {
             }
             HttpResponse result = httpClient.execute(method);
             url = URLDecoder.decode(url, "UTF-8");
-            // 请求发送成功，并得到响应 
+            // 请求发送成功，并得到响应
             if (result.getStatusLine().getStatusCode() == 200) {
                 try {
                     // 读取服务器返回过来的json字符串数据
@@ -180,10 +180,10 @@ public class HttpRequestUtils {
         }
         return strResult;
     }
-    
+
     /**
      * 发送get请求
-     * 
+     *
      * @param url [路径]
      * @return
      */
@@ -211,10 +211,10 @@ public class HttpRequestUtils {
         }
         return jsonResult;
     }
-    
+
     /**
      * post请求
-     * 
+     *
      * @param url [url地址]
      * @param jsonParam [参数]
      * @return
@@ -233,7 +233,7 @@ public class HttpRequestUtils {
             }
             HttpResponse result = httpClient.execute(method);
             url = URLDecoder.decode(url, "UTF-8");
-            // 请求发送成功，并得到响应 
+            // 请求发送成功，并得到响应
             if (result.getStatusLine().getStatusCode() == 200) {
                 String str = "";
                 try {
@@ -250,7 +250,7 @@ public class HttpRequestUtils {
         }
         return jsonResult;
     }
-    
+
     /**
      * 发送get请求,返回Map类型数据
      * @param url [请求URL]
@@ -270,7 +270,7 @@ public class HttpRequestUtils {
         }
         return null;
     }
-    
+
     /**
      * post请求，返回Map类型数据
      * @param url
@@ -291,7 +291,7 @@ public class HttpRequestUtils {
         }
         return null;
     }
-    
+
     /**
      * 发送get请求,返回List类型数据
      * @param url [请求URL]
@@ -317,7 +317,7 @@ public class HttpRequestUtils {
         }
         return null;
     }
-    
+
     /**
      * post请求，返回List类型数据
      * @param url
@@ -362,7 +362,7 @@ public class HttpRequestUtils {
             httpPost.setEntity(stringEntity);
             HttpClient client = new DefaultHttpClient();
             HttpResponse httpResponse = client.execute(httpPost);
-             result = EntityUtils.toString(httpResponse.getEntity(), HTTP.UTF_8);
+            result = EntityUtils.toString(httpResponse.getEntity(), HTTP.UTF_8);
         } catch(IOException e){
         }
 
