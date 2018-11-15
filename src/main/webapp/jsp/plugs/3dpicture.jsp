@@ -662,7 +662,7 @@
 
                 Effect(
 
-                    [ contextGlobal+"01.jpg", contextGlobal+"02.jpg", contextGlobal+"03.jpg", contextGlobal+"01.jpg", contextGlobal+"02.jpg", contextGlobal+"03.jpg", contextGlobal+"01.jpg", contextGlobal+"02.jpg", contextGlobal+"03.jpg" ],
+                    [ contextGlobal+"11.jpg", contextGlobal+"12.jpg", contextGlobal+"13.jpg", contextGlobal+"14.jpg", contextGlobal+"15.jpg", contextGlobal+"16.jpg", contextGlobal+"17.jpg", contextGlobal+"18.jpg", contextGlobal+"19.jpg" ],
 
                     200,
 

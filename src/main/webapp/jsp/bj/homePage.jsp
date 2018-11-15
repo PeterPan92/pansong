@@ -28,13 +28,13 @@
     <div id="nav">
         <ul>
             <li><a href="/">首页</a></li>
-            <li><a href="#">关于我们</a></li>
-            <li><a href="#">碎言碎语</a></li>
-            <li><a href="#">慢生活</a></li>
-            <li><a href="#">前世今生</a></li>
-            <li><a href="#">永无止境</a></li>
-            <li><a href="<%=request.getContextPath()%>/jsp/bj/messageBoard.jsp">留言板</a></li>
-            <li><a href="https://mail.panxinbing.com/" target="_blank">邮箱</a></li>
+            <li><a href="<%=request.getContextPath()%>/jsp/plugs/3dpicture.jsp">关于我们</a></li>
+            <li><a href="<%=request.getContextPath()%>/jsp/plugs/musicDinamic.jsp">碎言碎语</a></li>
+            <li><a href="<%=request.getContextPath()%>/jsp/plugs/dzkgame.jsp">慢生活</a></li>
+            <li><a href="<%=request.getContextPath()%>/jsp/plugs/3dflower.jsp">前世今生</a></li>
+            <li><a href="<%=request.getContextPath()%>/jsp/plugs/earth.jsp">永无止境</a></li>
+            <li><a href="<%=request.getContextPath()%>/jsp/bj/login.jsp">留言板</a></li>
+            <li><a href="http://mail.panxinbing.com/" target="_blank">邮箱</a></li>
         </ul>
     </div>
     <!--nav end-->

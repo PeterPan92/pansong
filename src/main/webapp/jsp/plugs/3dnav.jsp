@@ -220,31 +220,31 @@
                 <div class='line'></div>
                 <div class='tip'>  </div>
             </div>
+            <div class='future_ui__piece'> <span><a href="<%=request.getContextPath()%>/jsp/plugs/3dpicture.jsp"><font color ="white">3D空间</font></a></span>
+                <div class='line'></div>
+                <div class='tip'></div>
+            </div>
             <div class='future_ui__piece'> <span><a href="<%=request.getContextPath()%>/jsp/plugs/dzkgame.jsp"><font color ="white">休闲娱乐</font></a></span>
                 <div class='line'></div>
-                <div class='tip'></div>
-            </div>
-            <div class='future_ui__piece'> <span><a href="<%=request.getContextPath()%>/jsp/plugs/musicDinamic.jsp"><font color ="white">音乐空间</font></a></span>
-                <div class='line'></div>
                 <div class='tip'>  </div>
             </div>
-            <div class='future_ui__piece' onclick="<%=request.getContextPath()%>/jsp/plugs/earth.jsp"> <span><a href="<%=request.getContextPath()%>/jsp/plugs/earth.jsp"><font color ="white">旋转地球</font></a></span>
+            <div class='future_ui__piece' > <span><a href="<%=request.getContextPath()%>/jsp/plugs/musicDinamic.jsp"><font color ="white">音乐空间</font></a></span>
                 <div class='line'></div>
                 <div class='tip'></div>
             </div>
-            <div class='future_ui__piece'> <span><a href="#"><font color ="white">在线壁纸</font></a></span>
+            <div class='future_ui__piece'> <span><a href="<%=request.getContextPath()%>/jsp/plugs/earth.jsp"><font color ="white">旋转地球</font></a></span>
                 <div class='line'></div>
                 <div class='tip'>  </div>
             </div>
-            <div class='future_ui__piece'> <span><a href="<%=request.getContextPath()%>/jsp/bj/login.jsp"><font color ="white">登陆</font></a></span>
+            <div class='future_ui__piece'> <span><a href="<%=request.getContextPath()%>/jsp/plugs/3dflower.jsp"><font color ="white">花满天</font></a></span>
                 <div class='line'></div>
-                <div class='tip'> 在线音乐搜索页面 </div>
+                <div class='tip'>  </div>
             </div>
             <div class='future_ui__piece'> <span><a href="http://mail.panxinbing.com/"><font color ="white">邮箱登陆</font></a></span>
                 <div class='line'></div>
                 <div class='tip'> 邮箱登陆 </div>
             </div>
-            <div class='future_ui__piece'> <span><a href="#"><font color ="white">联系我们</font></a></span>
+            <div class='future_ui__piece'> <span><a href="<%=request.getContextPath()%>/jsp/bj/login.jsp"><font color ="white">加入我们</font></a></span>
                 <div class='line'></div>
                 <div class='tip'>  </div>
             </div>
