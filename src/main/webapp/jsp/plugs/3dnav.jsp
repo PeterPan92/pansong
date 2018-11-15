@@ -216,37 +216,37 @@
             <div class='outer_five__piece'></div>
         </div>
         <div class='pieces'>
-            <div class='future_ui__piece'> <span><a href="#"><font color ="white" size="7">您的网址</font></a></span>
+            <div class='future_ui__piece'> <span><a href="<%=request.getContextPath()%>/jsp/bj/homePage.jsp"><font color ="white" size="7">主页</font></a></span>
                 <div class='line'></div>
-                <div class='tip'> 网址：http://ylw.aqfushi.top/ </div>
+                <div class='tip'>  </div>
             </div>
-            <div class='future_ui__piece'> <span><a href="#"><font color ="white">自~己~修~改</font></a></span>
+            <div class='future_ui__piece'> <span><a href="<%=request.getContextPath()%>/jsp/plugs/dzkgame.jsp"><font color ="white">休闲娱乐</font></a></span>
                 <div class='line'></div>
-                <div class='tip'> 感谢 凉尘云 免费提供的 公益主机  网址:http://ylw.aqfushi.top/ </div>
+                <div class='tip'></div>
             </div>
-            <div class='future_ui__piece'> <span><a href="#"><font color ="white">作者QQ</font></a></span>
+            <div class='future_ui__piece'> <span><a href="<%=request.getContextPath()%>/jsp/plugs/musicDinamic.jsp"><font color ="white">音乐空间</font></a></span>
                 <div class='line'></div>
-                <div class='tip'> QQ:2622008384 </div>
+                <div class='tip'>  </div>
             </div>
-            <div class='future_ui__piece'> <span><a href="#"><font color ="white">官方QQ群</font></a></span>
+            <div class='future_ui__piece' onclick="<%=request.getContextPath()%>/jsp/plugs/earth.jsp"> <span><a href="<%=request.getContextPath()%>/jsp/plugs/earth.jsp"><font color ="white">旋转地球</font></a></span>
                 <div class='line'></div>
-                <div class='tip'> 群号:618542425 </div>
+                <div class='tip'></div>
             </div>
             <div class='future_ui__piece'> <span><a href="#"><font color ="white">在线壁纸</font></a></span>
                 <div class='line'></div>
-                <div class='tip'> 在线壁纸下载页面 </div>
+                <div class='tip'>  </div>
             </div>
-            <div class='future_ui__piece'> <span><a href="#"><font color ="white">音乐搜索</font></a></span>
+            <div class='future_ui__piece'> <span><a href="<%=request.getContextPath()%>/jsp/bj/login.jsp"><font color ="white">登陆</font></a></span>
                 <div class='line'></div>
                 <div class='tip'> 在线音乐搜索页面 </div>
             </div>
-            <div class='future_ui__piece'> <span><a href="#"><font color ="white">视频解析</font></a></span>
+            <div class='future_ui__piece'> <span><a href="http://mail.panxinbing.com/"><font color ="white">邮箱登陆</font></a></span>
                 <div class='line'></div>
-                <div class='tip'> 视频解析页面 </div>
+                <div class='tip'> 邮箱登陆 </div>
             </div>
-            <div class='future_ui__piece'> <span><a href="#"><font color ="white">官网公告</font></a></span>
+            <div class='future_ui__piece'> <span><a href="#"><font color ="white">联系我们</font></a></span>
                 <div class='line'></div>
-                <div class='tip'> 官网公告页面 </div>
+                <div class='tip'>  </div>
             </div>
             <div class='future_ui__piece blank'></div>
             <div class='future_ui__piece blank'></div>
@@ -284,4 +284,4 @@
 </div>
 </body>
 </html>
-<embed src=contextGlobal+"/skins/skin/bj/img/3dnav/mp3.mp3" width="0" height="0" border="0" autostart="1" loop="ture">
+<embed src="../skins/skin/bj/img/3dnav/mp3.mp3" width="0" height="0" border="0" autostart="1" loop="ture">

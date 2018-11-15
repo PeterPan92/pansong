@@ -21,6 +21,7 @@
 <a href="<%=request.getContextPath()%>/jsp/bj/login.jsp">登陆</a>
 <a href="<%=request.getContextPath()%>/jsp/bj/switchInWebsite.jsp">网站接入</a>
 <a href="<%=request.getContextPath()%>/jsp/plugs/musicDinamic.jsp">音乐空间</a>
+<a href="<%=request.getContextPath()%>/jsp/plugs/dzkgame.jsp">休闲娱乐</a>
 <a href="<%=request.getContextPath()%>/jsp/plugs/earth.jsp">旋转地球</a>
 <a href="<%=request.getContextPath()%>/jsp/plugs/3dnav.jsp">导航</a>
 <a href="<%=request.getContextPath()%>/jsp/plugs/3dpicture.jsp">3D空间</a>
