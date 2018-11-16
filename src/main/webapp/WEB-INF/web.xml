@@ -84,7 +84,7 @@
 
   <!-- 默认登录页配置 -->
   <welcome-file-list>
-    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>/jsp/plugs/earth.jsp</welcome-file>
   </welcome-file-list>
 
   <servlet-mapping>

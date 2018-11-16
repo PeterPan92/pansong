@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>js音频可视化-jq22.com</title>
+<title>寻梦空间</title>
 <link rel="stylesheet" type="text/css" href="css/css.css">
  <link rel="stylesheet" href="<%=request.getContextPath()%>/bootstrap/css/bootstrap.css">
  <link href="<%=request.getContextPath()%>/skins/skin/bj/css/musicDinamic.css" type="text/css" rel="stylesheet">

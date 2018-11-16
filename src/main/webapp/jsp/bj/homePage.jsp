@@ -27,7 +27,7 @@
     <!--nav begin-->
     <div id="nav">
         <ul>
-            <li><a href="/">首页</a></li>
+            <li><a href="<%=request.getContextPath()%>/jsp/plugs/3dnav.jsp">首页</a></li>
             <li><a href="<%=request.getContextPath()%>/jsp/plugs/3dpicture.jsp">关于我们</a></li>
             <li><a href="<%=request.getContextPath()%>/jsp/plugs/musicDinamic.jsp">碎言碎语</a></li>
             <li><a href="<%=request.getContextPath()%>/jsp/plugs/dzkgame.jsp">慢生活</a></li>
@@ -43,38 +43,38 @@
     <ul class="wall_a">
         <li><a href="/"><img src="<%=request.getContextPath()%>/skins/skin/bj/img/p01.jpg">
             <figcaption>
-                <h2>不再因为别人过得好而焦虑，在没有人看得到你的时候依旧能保持节奏 </h2>
+                <h2>即使不见面，不说话，不发信息，心里总会留一个位置，安安稳稳的放着一个人。 </h2>
             </figcaption>
         </a></li>
         <li><a href="/"><img src="<%=request.getContextPath()%>/skins/skin/bj/img/p02.jpg">
             <figcaption>
-                <h2>不再因为别人过得好而焦虑，在没有人看得到你的时候依旧能保持节奏 </h2>
+                <h2>思念这种东西，捂住嘴巴，它还会从眼睛里逃出来。 </h2>
             </figcaption>
         </a></li>
         <li><a href="/"><img src="<%=request.getContextPath()%>/skins/skin/bj/img/p03.jpg">
             <figcaption>
-                <h2>不再因为别人过得好而焦虑，在没有人看得到你的时候依旧能保持节奏 </h2>
+                <h2>答案很长，我准备用一生的时间来回答，你准备好听了吗？ </h2>
             </figcaption>
         </a></li>
         <li>
-            <p class="text_a"><a href="/">一个人最好的模样大概是平静一点，坦然接受自己所有的弱点，不再因为别人过得好而焦虑，在没有人看得到你的时候依旧能保持节奏......</a></p>
+            <p class="text_a"><a href="/">你我老了我只想和你待在小镇上一起看日出日落，一起种花养猫咪！去镇上过着无忧无虑的生活。每一次看到你的笑容我就会想逗逗你，与你对唱情歌。</a></p>
         </li>
         <li><a href="/"><img src="<%=request.getContextPath()%>/skins/skin/bj/img/p04.jpg">
             <figcaption>
-                <h2>不再因为别人过得好而焦虑，在没有人看得到你的时候依旧能保持节奏 </h2>
+                <h2>感觉你的名字有棱有角，刚好能嵌进我心脏同样形状的空缺位置。 </h2>
             </figcaption>
         </a></li>
         <li>
-            <p class="text_b"><a href="/">逃避自己的人，最终只能导致自己世界的崩塌，而变得越来越没有安全感。</a></p>
+            <p class="text_b"><a href="/">走路要牵着我呀，小时候老师没跟你说贵重物品要随身携带吗</a></p>
         </li>
         <li><a href="/"><img src="<%=request.getContextPath()%>/skins/skin/bj/img/p05.jpg">
             <figcaption>
-                <h2>不再因为别人过得好而焦虑，在没有人看得到你的时候依旧能保持节奏 </h2>
+                <h2>我怀念的只是一个简单的名字，一段简单的相遇。</h2>
             </figcaption>
         </a></li>
         <li><a href="/"><img src="<%=request.getContextPath()%>/skins/skin/bj/img/together2.jpg">
             <figcaption>
-                <h2>不再因为别人过得好而焦虑，在没有人看得到你的时候依旧能保持节奏 </h2>
+                <h2>爱上我，是你一生的赌注，我怎么舍得让你输 </h2>
             </figcaption>
         </a></li>
     </ul>
@@ -106,8 +106,8 @@
         <figcaption>有一天晚上我收到朋友的邮件，他问我怎样可以最快地摆脱寂寞，我想了想不知道应该怎么回答他，因为我从来没有摆脱过这个问题，我只能去习惯它，就像习惯身体的一部分。</figcaption>
     </figure>
     <figure> <a href="/"><img src="<%=request.getContextPath()%>/skins/skin/bj/img/flowerp.jpg"></a>
-        <p><a href="/">你要去相信，没有到不了的明天</a></p>
-        <figcaption>不管你现在是一个人走在异乡的街道上始终没有找到一丝归属感，还是你在跟朋友们一起吃饭开心地笑着的时候闪过一丝落寞。</figcaption>
+        <p><a href="/">余生与你</a></p>
+        <figcaption>假如这一生我有99次好运，我愿意把96次都分给你，只留三次给自己。一次是遇见你，一次是我爱的你也恰好爱上我，一次是永远陪你走下去。</figcaption>
     </figure>
     <figure> <a href="/"><img src="<%=request.getContextPath()%>/skins/skin/bj/img/hand300x256.jpg"></a>
         <p><a href="/">美丽的茧</a></p>

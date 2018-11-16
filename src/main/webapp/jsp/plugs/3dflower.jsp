@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>寻梦空间</title>
 </head>
 <body>
 
@@ -2238,5 +2238,10 @@ void main(void) {
 
     })(window, 'equestAnimationFrame');
 
+</script>
+<script>
+    window.onclick = function(event) {
+        window.location.href="<%=request.getContextPath()%>/jsp/plugs/3dnav.jsp";
+    }
 </script>
 </html>

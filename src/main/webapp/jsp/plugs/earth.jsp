@@ -7,16 +7,16 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <head>
-    <title>Clay - A 3D engine on canvas</title>
+    <title>寻梦空间</title>
 
     <script type="text/javascript" src="<%=request.getContextPath()%>/skins/js/plugs/clay.min.js"></script>
+    <script type="text/javascript" src="<%=request.getContextPath()%>/skins/js/plugs/.js"></script>
     <script>
         var contextGlobal = "<%=request.getContextPath()%>"
     </script>
 
 
     <script type="text/javascript">
-
         function Earth() {
 
             var stage = new Clay.Stage(800, 600);
@@ -119,5 +119,9 @@
 
 
 </body>
-
+<script>
+    window.onclick = function(event) {
+        window.location.href="<%=request.getContextPath()%>/jsp/plugs/3dnav.jsp";
+    }
+</script>
 </html>

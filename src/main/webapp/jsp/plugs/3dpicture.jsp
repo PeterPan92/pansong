@@ -13,7 +13,7 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <title>空间</title>
+    <title>寻梦空间</title>
 
     <meta name="Keywords" content="" />
     <script>
