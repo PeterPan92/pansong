@@ -13,9 +13,10 @@
     <meta name="Keywords" content="你和我" >
     <meta name="Description" content="Just for you" >
     <link href="<%=request.getContextPath()%>/skins/skin/bj/css/index.css" rel="stylesheet">
-    <!--[if lt IE 9]>
+
     <script src="<%=request.getContextPath()%>/skins/js/bj/modernizr.js"></script>
-    <![endif]-->
+    <script type="text/javascript" src="<%=request.getContextPath()%>/skins/js/bj/musicDinamic.js"></script>
+
 </head>
 <body>
 <header>
@@ -141,4 +142,8 @@
     <p>Design by <a href="/" target="_blank">DanceSmile</a></p>
 </footer>
 </body>
+<script>
+    var context="<%=request.getContextPath()%>";
+    var musicList = ["/skins/skin/bj/audio/慢慢喜欢你-莫文蔚.mp3","/skins/skin/bj/audio/纸短情长+%28完整版%29_烟把儿乐队.mp3","/skins/skin/bj/audio/遇见你的时候所有星星都落到我头上+-+高姗.mp3"]
+</script>
 </html>

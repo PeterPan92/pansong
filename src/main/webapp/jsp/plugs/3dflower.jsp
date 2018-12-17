@@ -9,6 +9,7 @@
 <html>
 <head>
     <title>寻梦空间</title>
+    <script type="text/javascript" src="<%=request.getContextPath()%>/skins/js/bj/musicDinamic.js"></script>
 </head>
 <body>
 
@@ -2243,5 +2244,7 @@ void main(void) {
     window.onclick = function(event) {
         window.location.href="<%=request.getContextPath()%>/jsp/plugs/3dnav.jsp";
     }
+    var context="<%=request.getContextPath()%>";
+    var musicList = ["/skins/skin/bj/audio/纸短情长+%28完整版%29_烟把儿乐队.mp3","/skins/skin/bj/audio/慢慢喜欢你-莫文蔚.mp3"]
 </script>
 </html>

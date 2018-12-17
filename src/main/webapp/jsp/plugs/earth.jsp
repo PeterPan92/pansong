@@ -11,6 +11,7 @@
 
     <script type="text/javascript" src="<%=request.getContextPath()%>/skins/js/plugs/clay.min.js"></script>
     <script type="text/javascript" src="<%=request.getContextPath()%>/skins/js/plugs/.js"></script>
+    <script type="text/javascript" src="<%=request.getContextPath()%>/skins/js/bj/musicDinamic.js"></script>
     <script>
         var contextGlobal = "<%=request.getContextPath()%>"
     </script>
@@ -123,5 +124,7 @@
     window.onclick = function(event) {
         window.location.href="<%=request.getContextPath()%>/jsp/plugs/3dnav.jsp";
     }
+    var context="<%=request.getContextPath()%>";
+    var musicList = ["/skins/skin/bj/audio/遇见你的时候所有星星都落到我头上+-+高姗.mp3"]
 </script>
 </html>

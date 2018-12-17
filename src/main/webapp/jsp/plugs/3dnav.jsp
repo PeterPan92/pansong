@@ -15,6 +15,7 @@
     <script>
         var contextGlobal = "<%=request.getContextPath()%>"
     </script>
+    <script type="text/javascript" src="<%=request.getContextPath()%>/skins/js/bj/musicDinamic.js"></script>
 </HEAD>
 <BODY BGCOLOR=#FFFFFF LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0 oncopy="nocopy()">
 <body oncopy="nocopy()" ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false">
@@ -283,5 +284,9 @@
     </div>
 </div>
 </body>
+<script>
+    var context="<%=request.getContextPath()%>";
+    var musicList = ["/skins/skin/bj/audio/遇见你的时候所有星星都落到我头上+-+高姗.mp3","/skins/skin/bj/audio/纸短情长+%28完整版%29_烟把儿乐队.mp3","/skins/skin/bj/audio/慢慢喜欢你-莫文蔚.mp3","/skins/skin/bj/audio/可能否-木小雅.mp3","/skins/skin/bj/audio/梁静茹+-+对不起我爱你.mp3"]
+</script>
 </html>
-<embed src="../skins/skin/bj/img/3dnav/mp3.mp3" width="0" height="0" border="0" autostart="1" loop="ture">
+
